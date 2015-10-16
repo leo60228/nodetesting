@@ -1,0 +1,50 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'gift' ]
+2 info using npm@2.14.2
+3 info using node@v4.0.0
+4 verbose install initial load of /home/snuggles08/Downloads/nodetesting/package.json
+5 verbose readDependencies loading dependencies from /home/snuggles08/Downloads/nodetesting/package.json
+6 silly cache add args [ 'gift', null ]
+7 verbose cache add spec gift
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'gift',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'gift',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed gift@*
+10 verbose addNamed "*" is a valid semver range for gift
+11 silly addNameRange { name: 'gift', range: '*', hasData: false }
+12 silly mapToRegistry name gift
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/gift
+16 verbose addNameRange registry:https://registry.npmjs.org/gift not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/gift
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 3:05:33 PM
+20 verbose request id 744e93c1b7b7a466
+21 http request GET https://registry.npmjs.org/gift
+22 info retry will retry, error on last attempt: Error: unable to get local issuer certificate
+23 info attempt registry request try #2 at 3:05:43 PM
+24 http request GET https://registry.npmjs.org/gift
+25 info retry will retry, error on last attempt: Error: unable to get local issuer certificate
+26 info attempt registry request try #3 at 3:06:43 PM
+27 http request GET https://registry.npmjs.org/gift
+28 verbose stack Error: unable to get local issuer certificate
+28 verbose stack     at Error (native)
+28 verbose stack     at TLSSocket.<anonymous> (_tls_wrap.js:1000:38)
+28 verbose stack     at emitNone (events.js:67:13)
+28 verbose stack     at TLSSocket.emit (events.js:166:7)
+28 verbose stack     at TLSSocket._finishInit (_tls_wrap.js:567:8)
+29 verbose cwd /home/snuggles08/Downloads/nodetesting
+30 error Linux 3.8.11
+31 error argv "/usr/bin/node" "/usr/bin/npm" "install" "gift"
+32 error node v4.0.0
+33 error npm  v2.14.2
+34 error code UNABLE_TO_GET_ISSUER_CERT_LOCALLY
+35 error unable to get local issuer certificate
+36 error If you need help, you may report this error at:
+36 error     <https://github.com/npm/npm/issues>
+37 verbose exit [ 1, true ]
